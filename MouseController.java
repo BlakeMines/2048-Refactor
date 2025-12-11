@@ -38,6 +38,13 @@ public class MouseController extends GameController implements MouseListener,Mou
     }
 
     // TODO: Response
+
+    /**
+     * We used commands here since each different event requires a different handling and the command
+     * decouples the event object from the controller.
+     */
+
+
     @Override
     protected void action(InputEvent e) {
         MouseDirectionEvent mouseEvent = (MouseDirectionEvent)e;

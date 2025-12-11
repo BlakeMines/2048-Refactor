@@ -19,6 +19,13 @@ public class Game2048{
         GameController controller = ControllerFactoryMethod.makeController(args[0]);
 
          // TODO: Response
+        /**
+         * We use a factory method here to create the controllers since depending on the input we will
+         * either need a mouse or keyboard controller and we don't know which to create until the input
+         * is given.
+         */
+
+
          /**
             Assign an instance to the controller.
             if arg[0] contains "mouse" make it MouseController()

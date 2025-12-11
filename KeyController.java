@@ -23,6 +23,12 @@ public class KeyController extends GameController implements KeyListener {
    }
 
     // TODO: Response
+
+    /**
+     * We used an observer here since each of the actions taken; up, down, left, or right, require
+     * notifying the view of how to manipulate the 2048 board.
+     */
+
     @Override
     protected void action(InputEvent e) {
         KeyEvent keyEvent = (KeyEvent)e;
